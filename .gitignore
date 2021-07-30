@@ -9,6 +9,10 @@
 .history
 .svn/
 
+.dart_tool
+Generated.xconfig
+flutter_export_environment.sh
+
 # IntelliJ related
 *.iml
 *.ipr
