@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:edufun/constants.dart';
+
 class LongButton extends StatelessWidget {
   final Widget to;
   final Color color, bgcolor;
@@ -24,7 +26,7 @@ class LongButton extends StatelessWidget {
         },
         style: ButtonStyle(
             foregroundColor: MaterialStateProperty.all(color),
-            backgroundColor: MaterialStateProperty.all(bgcolor)
+            backgroundColor: (bgcolor != null)? MaterialStateProperty.all(bgcolor):MaterialStateProperty.all(orangeCS)
         ),
         child: Text(
           label,

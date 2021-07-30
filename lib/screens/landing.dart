@@ -18,7 +18,7 @@ class Landing extends StatelessWidget {
           child: Container(
               alignment: Alignment.center,
               child: Column(
-                children: [
+                children: <Widget>[
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.2,
                   ), // TODO: cari cara buat bener2 ketengahin
