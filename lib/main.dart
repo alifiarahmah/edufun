@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: Welcome(), // TODO: klo dah kelar banget ganti jadi Landing(
+      home: Landing(), // TODO: klo dah kelar banget ganti jadi Landing(
     );
   }
 }
@@ -44,7 +44,7 @@ class Landing extends StatelessWidget {
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.2,
                   ), // TODO: cari cara buat bener2 ketengahin
-                  Image.asset("/images/logo.png",
+                  Image.asset("images/logo.png",
                       height: MediaQuery.of(context).size.height * 0.6),
                   Text(
                     "Ketuk untuk mulai",
@@ -73,7 +73,7 @@ class Welcome extends StatelessWidget {
 
             Expanded(
               child: Image.asset(
-                "/images/login.png",
+                "images/stock_login.png",
                 height: MediaQuery.of(context).size.height * 0.4,
               )
             ),
