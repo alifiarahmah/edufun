@@ -1,4 +1,5 @@
 import 'package:edufun/constants.dart';
+import 'package:edufun/screens/chats.dart';
 import 'package:flutter/material.dart';
 
 import 'package:edufun/components/longbutton.dart';
@@ -111,6 +112,7 @@ class CreateGame extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           LongButton(
+                            to: ChatScreen(),
                             label: "Buat Game untuk Whatsapp Bot",
                             bgcolor: greenCS,
                           ),

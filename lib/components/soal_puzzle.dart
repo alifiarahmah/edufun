@@ -5,6 +5,7 @@ class SoalPuzzle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
             "Ibu Evan punya 5 anak:\nLala, Lili, Lulu, Lolo, ...\nSiapa nama anak ke-5?",
@@ -13,35 +14,41 @@ class SoalPuzzle extends StatelessWidget {
                 fontSize: 24
             )
         ),
+        SizedBox(height: 18),
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            LongButton(
-              label: "Evan",
-              color: Colors.black,
-              width: MediaQuery.of(context).size.width * 0.2,
-            ),
-            LongButton(
-              label: "Lele",
-              width: MediaQuery.of(context).size.width * 0.2,
-            ),
+            PuzzleOption(label: "Evan"),
+            SizedBox(width: 18),
+            PuzzleOption(label: "Lele"),
           ],
         ),
+        SizedBox(height: 18),
 
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            LongButton(
-              label: "Lolo",
-              color: Colors.black,
-              width: MediaQuery.of(context).size.width * 0.2,
-            ),
-            LongButton(
-              label: "Lala",
-              color: Colors.black,
-              width: MediaQuery.of(context).size.width * 0.2,
-            ),
+            PuzzleOption(label: "Lolo"),
+            SizedBox(width: 18),
+            PuzzleOption(label: "Lala"),
           ],
         )
       ],
+    );
+  }
+}
+
+class PuzzleOption extends StatelessWidget {
+  final String label;
+  PuzzleOption({this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    return LongButton(
+      label: label,
+      color: Colors.black,
+      width: MediaQuery.of(context).size.width * 0.2,
+      height: MediaQuery.of(context).size.width * 0.2,
     );
   }
 }

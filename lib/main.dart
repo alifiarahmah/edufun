@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'screens/landing.dart';
-import 'constants.dart';
+import 'package:edufun/screens/landing.dart';
+import 'package:edufun/constants.dart';
+
+import 'package:edufun/screens/multi_ingame.dart';
 
 // EDUFUN
 // By Mantan TPB
