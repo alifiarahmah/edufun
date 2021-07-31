@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:edufun/components/longbutton.dart';
 import 'package:edufun/components/button_gameopt.dart';
+import 'package:edufun/screens/multi_lobbycreate.dart';
 
 class CreateGame extends StatelessWidget {
   @override
@@ -104,6 +105,7 @@ class CreateGame extends StatelessWidget {
                           SizedBox(height: 30),
 
                           LongButton(
+                            to: LobbyCreate(),
                             label: "Buat Game",
                           ),
                           SizedBox(height: 10),
@@ -115,6 +117,7 @@ class CreateGame extends StatelessWidget {
                           LongButton(
                             label: "Unduh Laporan Siswa",
                             bgcolor: greyCS,
+                            to: Premium()
                           ),
 
                         ]
@@ -132,6 +135,43 @@ class CreateGame extends StatelessWidget {
             )
           ],
         )
+    );
+  }
+}
+
+class Premium extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SimpleDialog(
+      title: Text(
+        "Langganan paket premium\ndulu, yuk!",
+        style: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.bold
+        ),
+      ),
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.all(18),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Anda akan mendapatkan akses berikut hanya dengan berlangganan Rp150.000/bulan:"),
+              Text("1. Jumlah games yang tak terbatas setiap harinya"),
+              Text("2. Dapat diakses oleh lebih dari 1000 siswa."),
+            ],
+          ),
+        ),
+
+        SimpleDialogOption(
+            onPressed: () {},
+            child: LongButton(
+              label: "Berlangganan sekarang",
+              color: Colors.black,
+              width: 100,
+            )
+        )
+      ],
     );
   }
 }

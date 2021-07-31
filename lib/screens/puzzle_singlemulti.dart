@@ -4,7 +4,8 @@ import 'package:edufun/components/bigbutton.dart';
 import 'package:edufun/components/longbutton.dart';
 import 'package:edufun/components/input_text.dart';
 
-import 'package:edufun/screens/multi_lobbyjoin.dart';
+import 'package:edufun/screens/level_list.dart';
+import 'package:edufun/screens/multi_lobbycreate.dart';
 
 import 'package:edufun/constants.dart';
 
@@ -57,7 +58,7 @@ class PuzzleGameMode extends StatelessWidget {
             LongButton(
               color: Colors.black,
               label: "Main sendiri",
-              // to: // TODO: taroh LevelList
+              to: LevelList()
             ),
             SizedBox(height: 20),
 
