@@ -3,9 +3,6 @@ import 'package:flutter/material.dart';
 import 'screens/landing.dart';
 import 'constants.dart';
 
-// TODO: hapus sebelum bener2 build
-import 'screens/multi_ingame.dart';
-
 
 void main() {
   runApp(MyApp());
@@ -21,7 +18,7 @@ class MyApp extends StatelessWidget {
         primaryColor: orangeCS,
         fontFamily: 'Poppins'
       ),
-      home: MultiGame(), // TODO: klo dah kelar banget ganti jadi Landing()
+      home: Landing(), // TODO: klo dah kelar banget ganti jadi Landing()
     );
   }
 }
