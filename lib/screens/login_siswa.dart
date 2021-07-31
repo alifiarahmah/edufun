@@ -4,6 +4,8 @@ import 'package:edufun/components/longbutton.dart';
 import 'package:edufun/components/input_text.dart';
 import 'package:edufun/components/input_password.dart';
 
+import 'package:edufun/screens/gamemode.dart';
+
 class LoginSiswa extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -67,6 +69,7 @@ class LoginSiswa extends StatelessWidget {
 
                         LongButton(
                           label: "Masuk", // TODO: buat gradien
+                          to: GameMode()
                         ),
 
                         SizedBox(height: 20),
