@@ -1,8 +1,10 @@
+import 'package:edufun/screens/creategame.dart';
 import 'package:flutter/material.dart';
 
 import 'package:edufun/components/longbutton.dart';
 import 'package:edufun/components/input_text.dart';
 import 'package:edufun/components/input_password.dart';
+import 'package:edufun/screens/creategame.dart';
 
 class LoginGuru extends StatelessWidget {
   @override
@@ -63,8 +65,9 @@ class LoginGuru extends StatelessWidget {
                           SizedBox(height: 20),
 
                           LongButton(
-                            label: "Masuk", // TODO: buat gradien
+                            label: "Masuk",
                             width: MediaQuery.of(context).size.width * 0.9,
+                            to: CreateGame()
                           ),
                           SizedBox(height: 20),
 
