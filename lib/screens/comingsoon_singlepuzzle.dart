@@ -14,7 +14,9 @@ class ComingSoonSP extends StatelessWidget {
         child: Column(
           children: [
             TextTitle(text: "Coming Soon"),
-            Image.asset("images/singlepuzzle.png"),
+            Image.asset(
+              "images/comingsoon_singlepuzzle.png",
+              width: MediaQuery.of(context).size.width * 0.3),
             LongButton(
                 to: GameMode(),
                 label: "Back",
