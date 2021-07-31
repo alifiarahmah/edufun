@@ -26,7 +26,7 @@ class GameOpt extends StatelessWidget {
                 label,
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 13
+                  fontSize: 9
                 ),
               ),
             ],
