@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:edufun/screens/comingsoon_singlepuzzle.dart';
 import 'package:edufun/constants.dart';
 import 'package:edufun/components/button_back.dart';
 
@@ -45,10 +45,10 @@ class LevelList extends StatelessWidget {
                           backgroundColor: MaterialStateProperty.all(orangeCS)
                       ),
                       onPressed: (){
-                        /*Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => )
-                        );*/
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ComingSoonSP()),
+                        );
                       },
                       child: Text(
                         "${i+1}",
