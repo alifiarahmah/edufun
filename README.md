@@ -2,10 +2,10 @@
 
 Team name: Mantan TPB<br>
 Team members:<br>
-Feodora Putri Humaira<br> 
-Amila Safira Arafani<br>
-Nadhira Aalia Syifaa<br>
-Alifia Rahmah<br>
+- Feodora Putri Humaira 
+- Amila Safira Arafani
+- Nadhira Aalia Syifaa
+- Alifia Rahmah
 
 ## Product Description
 
