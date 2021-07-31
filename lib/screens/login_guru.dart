@@ -54,26 +54,29 @@ class LoginGuru extends StatelessWidget {
                               color: Color(0xff777777),
                             ),
                           ),
-
                           SizedBox(height: 30),
 
                           InputText(label: "Mobile Number/Email"),
-
                           SizedBox(height: 20),
 
                           InputPassword(label: "Password"),
-
                           SizedBox(height: 20),
 
                           LongButton(
                             label: "Masuk", // TODO: buat gradien
+                            width: MediaQuery.of(context).size.width * 0.9,
                           ),
-
                           SizedBox(height: 20),
 
-                          FlatButton(
+                          TextButton(
                             onPressed: (){},
-                            child: Text("Lupa password"),
+                            child: Text(
+                              "Lupa password?",
+                              textAlign: TextAlign.right,
+                              style: TextStyle(
+                                color: Colors.grey
+                              ),
+                            ),
                           )
 
                         ],

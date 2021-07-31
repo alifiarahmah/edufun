@@ -6,13 +6,14 @@ class LongButton extends StatelessWidget {
   final Widget to;
   final Color color, bgcolor;
   final String label;
-  LongButton({this.bgcolor, this.color, this.label, this.to});
+  final double width;
+  LongButton({this.bgcolor, this.color, this.label, this.to, this.width});
 
   @override
   Widget build(BuildContext context) {
     return ConstrainedBox(
       constraints: BoxConstraints.tightFor(
-        width: MediaQuery.of(context).size.width * 0.8,
+        width: (width != null)? width:MediaQuery.of(context).size.width * 0.8,
         height: MediaQuery.of(context).size.height * 0.075
       ),
       child: ElevatedButton(
