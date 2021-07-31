@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:edufun/components/longbutton.dart';
 import 'package:edufun/components/button_gameopt.dart';
 import 'package:edufun/screens/multi_createlobby.dart';
+import 'package:edufun/screens/progress.dart';
 
 class CreateGame extends StatelessWidget {
   @override
@@ -168,7 +169,7 @@ class Premium extends StatelessWidget {
             child: LongButton(
               label: "Berlangganan sekarang",
               color: Colors.black,
-              width: 100,
+              to: Progress()
             )
         ),
         SimpleDialogOption(
@@ -177,7 +178,6 @@ class Premium extends StatelessWidget {
               to: CreateGame(),
               label: "Kembali",
               bgcolor: greyCS,
-              width: 100,
             )
         )
       ],

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'screens/progress.dart';
+import 'screens/landing.dart';
 import 'constants.dart';
 
+// EDUFUN
+// By Mantan TPB
 
 void main() {
   runApp(MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         primaryColor: orangeCS,
         fontFamily: 'Poppins'
       ),
-      home: Progress(), // TODO: klo dah kelar banget ganti jadi Landing()
+      home: Landing(), // TODO: klo dah kelar banget ganti jadi Landing()
     );
   }
 }
