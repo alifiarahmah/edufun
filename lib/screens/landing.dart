@@ -18,10 +18,9 @@ class Landing extends StatelessWidget {
           child: Container(
               alignment: Alignment.center,
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.2,
-                  ), // TODO: cari cara buat bener2 ketengahin
                   Image.asset("images/logo.png",
                       height: MediaQuery.of(context).size.height * 0.6),
                   Text(
