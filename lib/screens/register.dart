@@ -5,9 +5,23 @@ import 'package:edufun/components/input_password.dart';
 import 'package:edufun/components/longbutton.dart';
 import 'package:edufun/components/text_title.dart';
 
-class Register extends StatelessWidget {
+import 'package:edufun/screens/gamemode.dart';
+
+class Register extends StatefulWidget {
+  @override
+  _Register createState() => _Register();
+}
+
+class _Register extends State<Register> {
   @override
   Widget build(BuildContext context) {
+    var showPassword = false;
+    void togglePass() {
+      setState(() {
+        showPassword = !showPassword;
+      });
+    }
+
     return Scaffold(
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 24, horizontal: 56),
@@ -24,7 +38,9 @@ class Register extends StatelessWidget {
                   SizedBox(height: 10),
 
                   Text("Kata Sandi"),
-                  InputPassword(hint: "*******"),
+                  InputPassword(
+                    hint: "********",
+                  ),
                   SizedBox(height: 10),
 
                   Text("Nama"),
@@ -36,7 +52,10 @@ class Register extends StatelessWidget {
                 ],
               ),
             ),
-            LongButton(label: "Lanjut")
+            LongButton(
+              label: "Lanjut",
+              to: GameMode() // TODO: tanya ke gamemode atau ke login
+            )
           ],
         ),
       )

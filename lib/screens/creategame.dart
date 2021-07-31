@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:edufun/components/longbutton.dart';
 import 'package:edufun/components/button_gameopt.dart';
-import 'package:edufun/screens/multi_lobbycreate.dart';
+import 'package:edufun/screens/multi_createlobby.dart';
 
 class CreateGame extends StatelessWidget {
   @override
@@ -105,7 +105,7 @@ class CreateGame extends StatelessWidget {
                           SizedBox(height: 30),
 
                           LongButton(
-                            to: LobbyCreate(),
+                            to: CreateLobby(),
                             label: "Buat Game",
                           ),
                           SizedBox(height: 10),

@@ -4,7 +4,7 @@ import 'screens/landing.dart';
 import 'constants.dart';
 
 // TODO: hapus sebelum bener2 build
-import 'screens/login_guru.dart';
+import 'screens/multi_ingame.dart';
 
 
 void main() {
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         primaryColor: orangeCS,
         fontFamily: 'Poppins'
       ),
-      home: LoginGuru(), // TODO: klo dah kelar banget ganti jadi Landing(
+      home: MultiGame(), // TODO: klo dah kelar banget ganti jadi Landing()
     );
   }
 }
