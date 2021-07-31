@@ -54,7 +54,7 @@ class _Register extends State<Register> {
             ),
             LongButton(
               label: "Lanjut",
-              to: GameMode() // TODO: tanya ke gamemode atau ke login
+              to: GameMode()
             )
           ],
         ),

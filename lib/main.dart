@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         primaryColor: orangeCS,
         fontFamily: 'Poppins'
       ),
-      home: Landing(), // TODO: klo dah kelar banget ganti jadi Landing()
+      home: Landing(),
     );
   }
 }
