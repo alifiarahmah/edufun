@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:edufun/components/text_title.dart';
-import 'package:edufun/components/gradientbutton.dart';
+import 'package:edufun/components/gradientbigbutton.dart';
 import 'package:edufun/screens/login_siswa.dart';
 import 'package:edufun/screens/login_guru.dart';
 
@@ -19,7 +19,7 @@ class Login extends StatelessWidget {
             SizedBox(height: 50),
 
             // Siswa
-            GradientButton(
+            GradientBigButton(
               to: LoginSiswa(),
               start: Color(0xffA46D1D),
               end: Color(0xff3A3A41),
@@ -33,7 +33,7 @@ class Login extends StatelessWidget {
             SizedBox(height: 30),
 
             // Guru
-            GradientButton(
+            GradientBigButton(
               to: LoginGuru(),
               start: Color(0xffFF5C00),
               end: Color(0xff2BCE10),

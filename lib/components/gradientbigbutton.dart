@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
-class GradientButton extends StatelessWidget {
+// GradientBigButton
+// Untuk Login()
+
+class GradientBigButton extends StatelessWidget {
   final Color start, end;
   final String label;
   final Image image;
   final Widget to;
-  GradientButton({this.start, this.end, this.label, this.image, this.to});
+  GradientBigButton({this.start, this.end, this.label, this.image, this.to});
 
   @override
   Widget build(BuildContext context) {
