@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:edufun/constants.dart';
 
 import 'package:edufun/components/bigbutton.dart';
-import 'package:edufun/screens/level_list.dart';
+import 'package:edufun/screens/puzzle_singlemulti.dart';
 
 class GameMode extends StatelessWidget {
   @override
@@ -34,7 +34,7 @@ class GameMode extends StatelessWidget {
             SizedBox(height: 20),
 
             BigButton(
-              to: LevelList(),
+              to: PuzzleGameMode(),
               color: Colors.black,
               bgcolor: orangeCS,
               image: Image.asset("images/stock_puzzle.png"),

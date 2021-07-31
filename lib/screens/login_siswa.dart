@@ -35,7 +35,7 @@ class LoginSiswa extends StatelessWidget {
                       )
                   ),
                   child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: 70, horizontal: 30),
+                    padding: EdgeInsets.only(top: 70, left: 30, right: 30),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -92,8 +92,8 @@ class LoginSiswa extends StatelessWidget {
               )
           ),
           Positioned(
-            top: 15,
-            right: 30,
+            top: MediaQuery.of(context).size.width * 0.03,
+            right: MediaQuery.of(context).size.width * 0.1,
             child: Image.asset("images/stock_boy_pencil.png"),
           )
         ],

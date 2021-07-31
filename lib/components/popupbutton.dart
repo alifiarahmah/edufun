@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'package:edufun/constants.dart';
 
-class LongButton extends StatelessWidget {
+class PopupButton extends StatelessWidget {
   final void Function() action;
   final Color color, bgcolor;
   final String label;
   final double width;
-  LongButton({this.bgcolor, this.color, this.label, this.action, this.width});
+  PopupButton({this.bgcolor, this.color, this.label, this.action, this.width});
 
   @override
   Widget build(BuildContext context) {

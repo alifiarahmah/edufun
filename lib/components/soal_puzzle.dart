@@ -1,6 +1,5 @@
 import 'package:edufun/components/longbutton.dart';
 import 'package:flutter/material.dart';
-import 'package:edufun/components/longbutton.dart';
 
 class SoalPuzzle extends StatelessWidget {
   @override
@@ -17,7 +16,28 @@ class SoalPuzzle extends StatelessWidget {
         Row(
           children: [
             LongButton(
-              label: "E",
+              label: "Evan",
+              color: Colors.black,
+              width: MediaQuery.of(context).size.width * 0.2,
+            ),
+            LongButton(
+              label: "Lele",
+              width: MediaQuery.of(context).size.width * 0.2,
+            ),
+          ],
+        ),
+
+        Row(
+          children: [
+            LongButton(
+              label: "Lolo",
+              color: Colors.black,
+              width: MediaQuery.of(context).size.width * 0.2,
+            ),
+            LongButton(
+              label: "Lala",
+              color: Colors.black,
+              width: MediaQuery.of(context).size.width * 0.2,
             ),
           ],
         )

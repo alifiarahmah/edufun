@@ -5,7 +5,8 @@ import 'package:edufun/components/longbutton.dart';
 import 'package:edufun/components/input_text.dart';
 
 import 'package:edufun/screens/level_list.dart';
-import 'package:edufun/screens/multi_lobbycreate.dart';
+import 'package:edufun/screens/multi_createlobby.dart';
+import 'package:edufun/screens/multi_joinlobby.dart';
 
 import 'package:edufun/constants.dart';
 
@@ -92,7 +93,7 @@ class MultiCreateJoin extends StatelessWidget {
           child: LongButton(
             label: "Buat ruangan baru",
             color: Colors.black,
-            width: 100,
+            to: CreateLobby()
           ),
         ),
         SimpleDialogOption(
@@ -100,7 +101,7 @@ class MultiCreateJoin extends StatelessWidget {
           child: LongButton(
             label: "Bergabung ke ruangan",
             color: Colors.black,
-            width: 100,
+            to: InsertCode()
           )
         )
       ],
@@ -112,19 +113,34 @@ class InsertCode extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SimpleDialog(
-      title: Text("Apakah kamu sudah punya ruangan?"),
-      children: <Widget>[
-        InputText(
-          hint: "XX-XX-XX",
+      title: Text(
+        "Masukkan kode",
+        style: TextStyle(
+          fontWeight: FontWeight.w900,
         ),
+      ),
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.all(18),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("Kode didapat dari teman/gurumu"),
 
-        SimpleDialogOption(
-            onPressed: () {},
-            child: LongButton(
-              label: "Bergabung ke ruangan",
-              color: Colors.black,
-              width: 100,
-            )
+              InputText(
+                hint: "XX-XX-XX",
+              ),
+
+              SimpleDialogOption(
+                  onPressed: () {},
+                  child: LongButton(
+                    label: "Bergabung",
+                    color: Colors.black,
+                    to: JoinLobby()
+                  )
+              )
+            ],
+          ),
         )
       ],
     );

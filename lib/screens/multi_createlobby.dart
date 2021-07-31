@@ -4,6 +4,7 @@ import 'package:edufun/components/longbutton.dart';
 import 'package:edufun/components/button_back.dart';
 import 'package:edufun/components/playerlist.dart';
 import 'package:edufun/constants.dart';
+import 'package:edufun/screens/multi_ingame.dart';
 
 class CreateLobby extends StatelessWidget {
   @override
@@ -63,6 +64,7 @@ class CreateLobby extends StatelessWidget {
               LongButton(
                 bgcolor: redCS,
                 label: "MULAI",
+                to: MultiGame()
               )
 
             ],

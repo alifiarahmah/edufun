@@ -1,10 +1,10 @@
-import 'package:edufun/screens/creategame.dart';
+import 'package:edufun/screens/guru_creategame.dart';
 import 'package:flutter/material.dart';
 
 import 'package:edufun/components/longbutton.dart';
 import 'package:edufun/components/input_text.dart';
 import 'package:edufun/components/input_password.dart';
-import 'package:edufun/screens/creategame.dart';
+import 'package:edufun/screens/guru_creategame.dart';
 
 class LoginGuru extends StatelessWidget {
   @override
@@ -35,7 +35,7 @@ class LoginGuru extends StatelessWidget {
                         )
                     ),
                     child: Padding(
-                      padding: EdgeInsets.symmetric(vertical: 70, horizontal: 30),
+                      padding: EdgeInsets.only(top: 70, left: 30, right: 30),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
@@ -88,8 +88,8 @@ class LoginGuru extends StatelessWidget {
                 )
             ),
             Positioned(
-              top: 15,
-              right: 30,
+              top: MediaQuery.of(context).size.width * 0.03,
+              right: MediaQuery.of(context).size.width * 0.1,
               child: Image.asset(
                 "images/stock_girl_laptop.png",
                 height: 200,

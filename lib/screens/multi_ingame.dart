@@ -1,11 +1,11 @@
-import 'package:edufun/components/longbutton.dart';
 import 'package:edufun/constants.dart';
 import 'package:flutter/material.dart';
 
 import 'package:edufun/components/button_menu.dart';
+import 'package:edufun/components/longbutton.dart';
+import 'package:edufun/components/soal_puzzle.dart';
 
 class MultiGame extends StatelessWidget {
-  // TODO: buat stateful klo masih ada waktu
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,12 +37,14 @@ class MultiGame extends StatelessWidget {
             ),
 
             Expanded(
-              child: Text("pil"),
+              child: SoalPuzzle(),
             ),
+
             LongButton(
               label: "Jawab",
               bgcolor: brownCS,
             ),
+
             Row(
               children: [
                 Expanded(

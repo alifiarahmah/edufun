@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screens/landing.dart';
+import 'screens/progress.dart';
 import 'constants.dart';
 
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primaryColor: orangeCS,
         fontFamily: 'Poppins'
       ),
-      home: Landing(), // TODO: klo dah kelar banget ganti jadi Landing()
+      home: Progress(), // TODO: klo dah kelar banget ganti jadi Landing()
     );
   }
 }
