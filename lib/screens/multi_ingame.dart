@@ -100,26 +100,30 @@ class BuyCoin extends StatelessWidget {
         Padding(
           padding: EdgeInsets.all(18),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text("Harap beli dahulu ya"),
               SizedBox(height: 18),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Column(
                 children: [
-                  GameOpt(
-                    image: Image.asset("images/sym_coin.png"),
-                    label: "1 bantuan\nRp5.000",
+                  SimpleDialogOption(
+                    child: GameOpt(
+                      image: Image.asset("images/sym_coin.png"),
+                      label: "1 bantuan Rp5.000",
+                    ),
                   ),
                   SizedBox(width: 10),
-                  GameOpt(
-                    image: Image.asset("images/sym_coin.png"),
-                    label: "5 bantuan\nRp15.000",
+                  SimpleDialogOption(
+                    child: GameOpt(
+                      image: Image.asset("images/sym_coin.png"),
+                      label: "5 bantuan Rp15.000",
+                    ),
                   ),
                   SizedBox(width: 10),
-                  GameOpt(
-                    image: Image.asset("images/sym_coin.png"),
-                    label: "10 bantuan\nRp20.000",
+                  SimpleDialogOption(
+                    child: GameOpt(
+                      image: Image.asset("images/sym_coin.png"),
+                      label: "10 bantuan Rp20.000",
+                    ),
                   )
                 ],
               )

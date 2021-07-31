@@ -36,7 +36,7 @@ class CreateGame extends StatelessWidget {
                         )
                     ),
                     child: Padding(
-                      padding: EdgeInsets.symmetric(vertical: 70, horizontal: 30),
+                      padding: EdgeInsets.only(top: 70, left: 30, right: 30),
                       child: ListView(
                         children: <Widget>[
                           Text(
@@ -61,20 +61,22 @@ class CreateGame extends StatelessWidget {
                             ),
                           ),
 
-                          Row(
+                          Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               GameOpt(
                                 image: Image.asset("images/thumb_chat.png"),
-                                label: "Game\nTeka-Teki\nDialog",
+                                label: "Teka-Teki Dialog",
                               ),
+                              SizedBox(height: 10),
                               GameOpt(
                                 image: Image.asset("images/thumb_hug.png"),
-                                label: "Game\nPilihan\nGanda",
+                                label: "Game Pilihan Ganda",
                               ),
+                              SizedBox(height: 10),
                               GameOpt(
                                 image: Image.asset("images/thumb_heart.png"),
-                                label: "Game\nPuzzle",
+                                label: "Game Puzzle",
                               ),
                             ],
                           ),
@@ -86,18 +88,21 @@ class CreateGame extends StatelessWidget {
                                 fontSize: 18
                             ),
                           ),
+                          SizedBox(height: 10),
 
-                          Row(
+                          Column(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               GameOpt(
                                 image: Image.asset("images/thumb_girl.png"),
-                                label: "Bahasa\nIndonesia",
+                                label: "Bahasa Indonesia",
                               ),
+                              SizedBox(height: 10),
                               GameOpt(
                                 image: Image.asset("images/thumb_book.png"),
                                 label: "IPA",
                               ),
+                              SizedBox(height: 10),
                               GameOpt(
                                 image: Image.asset("images/thumb_robot.png"),
                                 label: "Matematika",
