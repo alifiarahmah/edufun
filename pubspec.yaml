@@ -1,5 +1,5 @@
 name: edufun
-description: A new Flutter project.
+description: Aplikasi pembelajaran digital yang  mengedepankan metode fun learning dengan konsep gamifikasi untuk mengembangkan kemampuan sains, membaca, dan matematika.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -46,7 +46,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/
+    - images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -74,17 +74,22 @@ flutter:
   fonts:
     - family: Poppins
       fonts:
-        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
-        - asset: assets/fonts/Poppins/Poppins-SemiBold.ttf
+        - asset: fonts/Poppins/Poppins-Regular.ttf
+        - asset: fonts/Poppins/Poppins-SemiBold.ttf
           weight: 600
-        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+        - asset: fonts/Poppins/Poppins-Bold.ttf
           weight: 700
-        - asset: assets/fonts/Poppins/Poppins-ExtraBold.ttf
+        - asset: fonts/Poppins/Poppins-ExtraBold.ttf
           weight: 800
-        - asset: assets/fonts/Poppins/Poppins-Black.ttf
+        - asset: fonts/Poppins/Poppins-Black.ttf
           weight: 900
-        - asset: assets/fonts/Poppins/Poppins-Italic.ttf
+        - asset: fonts/Poppins/Poppins-Italic.ttf
           style: italic
+
+flutter_icons:
+  image_path: "images/logo_app.png"
+  android: true
+  ios: true
 
   #
   # For details regarding fonts from package dependencies,

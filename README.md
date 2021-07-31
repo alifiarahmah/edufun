@@ -1,4 +1,4 @@
-# edufun
+# EduFun
 
 Team name: Mantan TPB<br>
 Team members:<br>
@@ -8,5 +8,7 @@ Nadhira Aalia Syifaa<br>
 Alifia Rahmah<br>
 
 ## Product Description
+
+Edufun adalah aplikasi pembelajaran digital yang  mengedepankan metode fun learning dengan konsep gamifikasi untuk mengembangkan kemampuan sains, membaca, dan matematika.
 
 ---
