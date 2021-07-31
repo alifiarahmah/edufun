@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:edufun/screens/login_siswa.dart';
+import 'package:edufun/screens/login.dart';
 import 'package:edufun/screens/register.dart';
 import 'package:edufun/components/text_title.dart';
 import 'package:edufun/components/longbutton.dart';
